@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="css/project.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script src="js/menu.js"></script>
+<head>
+  <title>blog</title>
+</head>
+<body>
+
+  <div class="home"><div class="constant" id="constant">
+      <header class="left" id="main">
+        <H1>CSE ASSOCIATION</H1>
+      </header>
+    <div class="top right">
+      <img id="menuicon" class="hide hideimg" src="images/menu.png"/>
+          <img id="menuicon2" style="display:none;" src="images/close.png"/>
+      </div>
+
+    <nav class="show" id="navbar">
+        <ul>
+          <li><a href="#events">EVENTS</a></li>
+          <li><a href="achievers.html">ACHIEVERS</a></li>
+          <li><a href="project.html">PROJECTS</a></li>
+          <li><a href="#team">TEAM</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+          <li><a href="#contact">CONTACT US</a></li>
+        </ul>
+    </nav>
+    <div id="menu" style="display:none;">
+          <a href="#events"><div id="options">EVENTS</div></a>
+          <a href="achievers.html"><div id="options">ACHIEVERS</div></a>
+          <a href="projects.html"><div id="options">PROJECTS</div></a>
+          <a href="#team"><div id="options">TEAM</div></a>
+          <a href="blog.html"><div id="options">BLOG</div></a>
+          <a href="#contact"><div id="options">CONTACT US</div></a>
+      </div>
+  </div>
+
+
+  <h1 class="h1">PROJECTS</h1>
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
+
+
+  <div class="mySlides fade">
+    <div class="part1" style="width: 100%;">
+      <div class="pro1">
+        <h3>NAME</h3><H5>CLASS</H5>
+        <img src="images/project1.png"><a href="#"><p>PROJECTNAME</p></a>
+      </div>
+      <div class="pro2">
+        <h3>NAME</h3><H5>CLASS</H5>
+        <img src="images/project2.png"><a href="#"><p>PROJECTNAME</p></a>
+      </div>
+      <div class="pro3">
+        <h3>NAME</h3><H5>CLASS</H5>
+        <img src="images/project3.png"><a href="#"><p>PROJECTNAME</p></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="part2" style="width: 100%;">
+      <div class="pro1">
+        <h3>NAME</h3><H5>CLASS</H5>
+        <img src="images/project4.webp"><a href="#"><p>PROJECTNAME</p></a>
+      </div>
+      <div class="pro2">
+        <h3>NAME</h3><H5>CLASS</H5>
+        <img src="images/project5.png"><a href="#"><p>PROJECTNAME</p></a>
+      </div>
+      <div class="pro3">
+        <h3>NAME</h3><H5>CLASS</H5>
+        <img src="images/project6.png"><a href="#"><p>PROJECTNAME</p></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="part3" style="width: 100%;">
+      <div class="pro1">
+        <h3>NAME</h3><H5>CLASS</H5>
+        <img src="images/project7.jpg"><a href="#"><p>PROJECTNAME</p></a>
+      </div>
+      <div class="pro2">
+        <h3>NAME</h3><H5>CLASS</H5>
+        <img src="images/project8.jpg"><a href="#"><p>PROJECTNAME</p></a>
+      </div>
+      <div class="pro3">
+        <h3>NAME</h3><H5>CLASS</H5>
+        <img src="images/project9.jpg"><a href="#"><p>PROJECTNAME</p></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<script>
+  var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
+</html>

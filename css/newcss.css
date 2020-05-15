@@ -1,0 +1,119 @@
+body{
+  background-color: #000000;
+}
+html{
+	background-color: black;
+	width: 100%;
+	height: auto;
+  overflow-x: hidden;
+	font-family: 'Montserrat', sans-serif;
+	scroll-behavior: smooth;
+}
+a{
+	text-decoration: none;
+	color:white;
+}
+/*#constant{
+  height: 70px;
+  width: 100%;
+  background-color: black;
+  margin: 0;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 3;
+}
+#navbar ul{
+	padding: 0;
+	list-style:none;
+}
+#navbar li{
+	display: inline;
+	padding: 13.5px;
+}
+#navbar a{
+	text-decoration:none;
+	font-size: 18px;
+	color:white;
+}
+h1{
+	color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+p{
+  color: white;
+}
+#main{
+  width:35%;
+  float: left;
+  padding-left:10px;
+}
+#navbar{
+  width:55%;
+  float:right;
+  padding-top:15px;
+  padding-right: 10px;
+
+}*/
+.block{
+  display: flex;
+  width: 92%;
+  margin: auto;
+  margin-top: 5%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+figure{
+  width: 30%;
+  margin: 20px 0;
+  border: 1px solid #777;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #dedede;
+  color: #000000;
+  flex-shrink: 0;
+}
+figure img{
+  width: 100%;
+}
+figure figcaption{
+  text-align: center;
+  padding: 8px 4px;
+  color: #000000;
+  line-height: 1.5em;
+  font-size: 20px;
+}
+
+.button {
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding : 10px 30PX;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 10px 25% ;
+
+  border-radius: 12px;
+  margin: auto;
+  display:block;
+
+}
+
+.button:hover{
+  background:#808080;
+  color:#FFFFFF;
+}
+@media only screen and (max-width:600px) {
+  .block{
+    display: block;
+  }
+  figure{
+    width: 90%;
+    float: none;
+  }
+  figure figcaption{
+    font-size: 15px;
+  }

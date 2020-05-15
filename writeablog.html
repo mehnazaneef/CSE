@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/writeablog.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+	<script src="js/menu.js"></script>
+</head>
+<body>
+	
+	<div class="home"><div class="constant" id="constant">
+			<header class="left" id="main">
+				<H1>CSE ASSOCIATION</H1>
+			</header>
+		<div class="top right">
+			<img id="menuicon" class="hide hideimg" src="images/menu.png"/>
+	        <img id="menuicon2" style="display:none;" src="images/close.png"/>
+    	</div>
+
+		<nav class="show" id="navbar">
+				<ul>
+					<li><a href="#events">EVENTS</a></li>
+					<li><a href="achievers.html">ACHIEVERS</a></li>
+					<li><a href="project.html">PROJECTS</a></li>
+					<li><a href="#team">TEAM</a></li>
+					<li><a href="blog.html">BLOG</a></li>
+					<li><a href="#contact">CONTACT US</a></li>
+				</ul>
+		</nav>
+		<div id="menu" style="display:none;">
+	        <a href="#events"><div id="options">EVENTS</div></a>
+	        <a href="achievers.html"><div id="options">ACHIEVERS</div></a>
+	        <a href="projects.html"><div id="options">PROJECTS</div></a>
+	        <a href="#team"><div id="options">TEAM</div></a>
+        	<a href="blog.html"><div id="options">BLOG</div></a>
+        	<a href="#contact"><div id="options">CONTACT US</div></a>
+    	</div>
+	</div>
+
+	
+	<div class="principle">
+		<form class="my-form">
+			<div class="form-grp" id="name">
+				<input type="text" placeholder="Full Name" name="name">
+			</div>
+			<div class="form-grp" id="sem">
+				<select name="semester">
+					<option value=S1>S1</option>
+					<option value=S2>S2</option>
+					<option value=S3>S3</option>
+					<option value=S4>S4</option>
+					<option value=S5>S5</option>
+					<option value=S6>S6</option>
+					<option value=S7>S7</option>
+					<option value=S8>S8</option>
+				</select>
+			</div>
+		    <div class="form-grp" id="sub">
+				<input type="text" placeholder="subject/heading" name="name">
+		    </div>
+		    <div class="blog">
+		    	<textarea name="textarea" placeholder="Write your blog here"></textarea>
+		    </div>
+		    <input class="btn" type="button" name="submit" value="Submit">
+	    </form>
+	</div>
+</body>
+</html>

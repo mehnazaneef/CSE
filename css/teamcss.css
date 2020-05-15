@@ -1,0 +1,100 @@
+html{
+	background-color: black;
+	width: 100%;
+	height: auto;
+  overflow-x: hidden;
+	font-family: 'Montserrat', sans-serif;
+	scroll-behavior: smooth;
+}
+a{
+	text-decoration: none;
+	color:white;
+}
+/*#constant{
+  height: 70px;
+  width: 100%;
+  background-color: black;
+  margin: 0;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 3;
+}
+#navbar ul{
+	padding: 0;
+	list-style:none;
+}
+#navbar li{
+	display: inline;
+	padding: 13.5px;
+}
+#navbar a{
+	text-decoration:none;
+	font-size: 18px;
+	color:white;
+}
+h1{
+	color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+p{
+  color: white;
+}
+#main{
+  width:35%;
+  float: left;
+  padding-left:10px;
+}
+#navbar{
+  width:55%;
+  float:right;
+  padding-top:15px;
+  padding-right: 10px;
+
+}*/
+body{
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.header{
+margin-top: 8%;
+font-size: 20px;
+text-align: center;
+position: relative;
+}
+
+.block{
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+figure{
+  width: 25%;
+  margin: 0;
+  border: 0 solid #777;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #000000;
+  border-radius: 50%;
+}
+figure img{
+  width: 100%;
+  border-radius: 50%;
+  border: 3px solid  #FF7F50;
+}
+figure figcaption{
+  text-align: center;
+  padding: 0px 4px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 2vw;
+}
+@media only screen and (max-width:600px) {
+  figure{
+    width: 50%;
+  }
+}
